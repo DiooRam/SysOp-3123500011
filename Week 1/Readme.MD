@@ -37,7 +37,7 @@
   
   1. Menyalakan Komputer
   Kamu menyalakan komputer, PC, atau laptop dengan menekan tombol power.
-  <img src="Screenshot (785).png">
+  <img src="Week 1/image/power.jpg">
   
   2. Cek Power
   Selanjutnya, power supply akan mengeluarkan sinyal bahwa aliran listrik yang masuk berjalan dengan aman dan normal. Itu
