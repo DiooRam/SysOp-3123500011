@@ -20,9 +20,9 @@
 
 ## Daftar Isi
 1. [Komposisi MotherBoard](#Komposisi-MotherBoard)
-2. [Perbedaan Legacy&UEFI](#Perbedaan-Legacy&UEFI).
+2. [Perbedaan Legacy&UEFI](#Perbedaan-Legacy&UEFI)
 
-# Komposisi MotherBoard
+## Komposisi MotherBoard
 
 1. Socket CPU: Ada ZIF (Zero Insertion Force), LIF (Low Insertion Force), dan AMD Socket A.
 <img src="image/cpu.jpg">
@@ -59,15 +59,15 @@
 <img src="image/cmos.jpg">
 
 
-# Perbedaan Legacy&UEFI
+## Perbedaan Legacy&UEFI
 <img src="image/UEFI-vs-Legacy.png">
-Definisi Unified Extensible Firmware Interface (UEFI) adalah proses booting pada komputer modern dengan kemampuan lebih canggih dibanding sistem Legacy.
-UEFI menggunakan firmware URFI untuk menyimpan EFI Service Partitions saat proses booting berlangsung.
-Sementara, Legacy adalah proses booting komputer dengan firmware BIOS yang lebih lama dan tradisional.
-Waktu yang Dibutuhkan UEFI membutuhkan waktu booting yang lebih cepat. Sedangkan, Legacy lebih lama.
-Dukungan untuk Penyimpanan UEFI sudah menggunakan partisi GUID Partition Table (GTP), sehingga dapat mendukung perangkat penyimpanan hingga 9 zettabytes.
-Legacy yang masih menggunakan dukungan Master Boot Record (MBR) dapat mendukung perangkat penyimpanan komputer hanya 2 TB.
-Keamanan UEFI dapat mencegah pemuatan aplikasi yang tak sah atau dicurigai.
-Selain itu juga dapat menghambat adanya kerja dua boot karena UEFI menganggap sistem operasi adalah aplikasi.
-ADVERTISEMENT Namun, pada Legacy, tak ada keamanan yang disediakan saat booting berlangsung, sehingga ada kemungkinan aplikasi tak sah dimuat serta terjadi dual-boot.
+
+1. Definisi Unified Extensible Firmware Interface (UEFI) adalah proses booting pada komputer modern dengan kemampuan lebih canggih dibanding sistem Legacy. UEFI menggunakan firmware URFI untuk menyimpan EFI Service Partitions saat proses booting berlangsung. Sementara, Legacy adalah proses booting komputer dengan firmware BIOS yang lebih lama dan tradisional.
+
+2. Waktu yang Dibutuhkan UEFI membutuhkan waktu booting yang lebih cepat. Sedangkan, Legacy lebih lama.
+
+3. Dukungan untuk Penyimpanan UEFI sudah menggunakan partisi GUID Partition Table (GTP), sehingga dapat mendukung perangkat penyimpanan hingga 9 zettabytes. Legacy yang masih menggunakan dukungan Master Boot Record (MBR) dapat mendukung perangkat penyimpanan komputer hanya 2 TB.
+
+4. Keamanan UEFI dapat mencegah pemuatan aplikasi yang tak sah atau dicurigai. Selain itu juga dapat menghambat adanya kerja dua boot karena UEFI menganggap sistem operasi adalah aplikasi. ADVERTISEMENT Namun, pada Legacy, tak ada keamanan yang disediakan saat booting berlangsung, sehingga ada kemungkinan aplikasi tak sah dimuat serta terjadi dual-boot.
+
 
