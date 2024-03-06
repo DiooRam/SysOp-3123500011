@@ -24,39 +24,38 @@
 
 # Komposisi MotherBoard
 
-1.Socket CPU: Ada ZIF (Zero Insertion Force), LIF (Low Insertion Force), dan AMD Socket A.
-
-<img src="image/cpu.jpg.">
-
+1. Socket CPU: Ada ZIF (Zero Insertion Force), LIF (Low Insertion Force), dan AMD Socket A.
+<img src="image/cpu.jpg">
 
 
-2.BIOS (Basic Input-Output System): Program dasar yang menghubungkan motherboard dengan sistem operasi.
+
+2. BIOS (Basic Input-Output System): Program dasar yang menghubungkan motherboard dengan sistem operasi.
 
 <img src="image/bios.jpg">
 
 
 
-3.North Bridge Controller: Menghubungkan slot RAM, AGP, dan socket CPU.
+3. North Bridge Controller: Menghubungkan slot RAM, AGP, dan socket CPU.
 <img src="image/southnorthbridge.jpg">
 
-4.South Bridge Controller: Mengatur peripheral seperti USB, keyboard, IDE controller, dll.
+4. South Bridge Controller: Mengatur peripheral seperti USB, keyboard, IDE controller, dll.
 <img src="image/southnorthbridge.jpg">
 
-5.Konektor Power Supply Unit: Menyambungkan motherboard dengan power supply, AT atau ATX.
+5. Konektor Power Supply Unit: Menyambungkan motherboard dengan power supply, AT atau ATX.
 <img src="image/konektor ps.jpg">
 
-6.Socket CPU: Ada ZIF (Zero Insertion Force), LIF (Low Insertion Force), dan AMD Socket A.
+6. Socket CPU: Ada ZIF (Zero Insertion Force), LIF (Low Insertion Force), dan AMD Socket A.
 <img src="image/socketram.jpg">
 
-7.BIOS (Basic Input-Output System): Program dasar yang menghubungkan motherboard dengan sistem operasi.
+7. BIOS (Basic Input-Output System): Program dasar yang menghubungkan motherboard dengan sistem operasi.
 <img src="image/pci.jpg">
 
-8.North Bridge Controller: Menghubungkan slot RAM, AGP, dan socket CPU.
+8. North Bridge Controller: Menghubungkan slot RAM, AGP, dan socket CPU.
 <img src="image/slotagp.jpg">
 
-9.South Bridge Controller: Mengatur peripheral seperti USB, keyboard, IDE controller, dll.
+9. South Bridge Controller: Mengatur peripheral seperti USB, keyboard, IDE controller, dll.
 <img src="image/sata.jpg">
-10.Konektor Power Supply Unit: Menyambungkan motherboard dengan power supply, AT atau ATX.
+10. Konektor Power Supply Unit: Menyambungkan motherboard dengan power supply, AT atau ATX.
 <img src="image/cmos.jpg">
 
 
