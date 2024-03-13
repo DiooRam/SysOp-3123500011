@@ -37,28 +37,28 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
 
 ### Install GCC, make, dan GIT
 
- <img src= "InstallGCC,make,dnGIT.jpg" >
+ <img src= "image/Install GCC,make, dn GIT.jpg" >
 
 
 ### How to run FLOPS dan IOPS
 
-![App Screenshot](Flopsdaniops.jpg)
+ <img src= "image/Flops dan iops.jpg" >
 
 1. Ragil<br>
    Percobaan FLOPS64 5 kali<br>
-   ![App Screenshot](RagilFLOPS.png)<br>
+   <img src= "image/Ragil FLOPS.png" >
    Percobaan IOPS64 5 kali<br>
-   ![App Screenshot](RagilIOPS.png)<br>
+   <img src= "image/Ragil IOPS.png" >
 2. Hana<br>
    Percobaan FLOPS64 5 kali<br>
-   ![App Screenshot](HanaFLOPS.png)<br>
+   <img src= "image/Hana FLOPS.png" >
    Percobaan IOPS64 5 kali<br>
-   ![App Screenshot](HanaIOPS.png)<br>
+  <img src= "image/Hana IOPS.png" >
 3. Dio<br>
    Percobaan FLOPS64 5 kali<br>
-   ![App Screenshot](/DioFLOPS.png)<br>
+   <img src= "image/Dio FLOPS.png" >
    Percobaan IOPS64 5 kali<br>
-   ![App Screenshot](DioIOPS.png)<br>
+   <img src= "image/Dio IOPS.png" >
 
 
 ### Tabel Pengujian
