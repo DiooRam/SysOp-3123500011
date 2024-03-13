@@ -1,5 +1,5 @@
 <div align="center">
-    <h1 style="text-align: center;font-weight: bold">Praktikum 2<br>SysOp</h1>
+    <h1 style="text-align: center;font-weight: bold">Praktikum 3<br>SysOp</h1>
     <h4 style="text-align: center;">Dosen Pengampu : Dr. Ferry Astika Saputra, S.T., M.Sc.</h4>
 </div>
 <br />
@@ -18,51 +18,48 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
     <hr>
 </div>
 
+
 ## Daftar Isi
 
 1. [PPT](#ppt)
-2. [FLOPS dan IOPS](#flops-dan-iops)
-   - [Install gcc, make, dan git](#install-gcc-make-dan-git)
-   - [How to run FLOPS dan IOPS](#how-to-run-flops-dan-iops)
-   - [Tabel Pengujian](#tabel-pengujian)
-   - [Analisa](#analisa)
+2. [FLOPS dan IOPS](#flops-dan-iops)<br>
+   [Install gcc, make, dan git](#install-gcc-make-dan-git)<br>
+   [How to run FLOPS dan IOPS](#how-to-run-flops-dan-iops)<br>
+   [Tabel Pengujian](#tabel-pengujian)<br>
+   [Analisa](#analisa)
 3. [Referensi](#referensi)
 
 ## PPT
 
-[Link PPT](https://www.canva.com/design/DAF_FjVZneE/mGYFV4pIDyYAnDvjwu0qfg/view?utm_content=DAF_FjVZneE&utm_campaign=designshare&utm_medium=link&utm_source=editor)
+[Link PPT](https://www.canva.com/design/DAF_Q_JAZRc/i6EOGG2lMCJPxMgpVESW0g/view?utm_content=DAF_Q_JAZRc&utm_campaign=designshare&utm_medium=link&utm_source=editor)
 
 ## FlOPS dan IOPS
 
 ### Install GCC, make, dan GIT
-<div
-<img src="/image/Install GCC,make, dn GIT.jpg">
-</div>
+
+ <img src= "InstallGCC,make,dnGIT.jpg" >
+
+
 ### How to run FLOPS dan IOPS
 
-<div
-<img src="image/Flops dan iops.jpg">
-</div>
+![App Screenshot](Flopsdaniops.jpg)
 
-1. Ragil
-   Percobaan FLOPS64 5 kali
-   ![App Screenshot](assets/img/awang_flops.jp)
-   Percobaan IOPS64 5 kali
-   ![App Screenshot](assets/img/awang_iops.jpg)
-2. Hana
-   Percobaan FLOPS64 5 kali
-   ![App Screenshot](assets/img/flops64_1.png)
-   ![App Screenshot](assets/img/flops64_2.png)
-   Percobaan IOPS64 5 kali
-   ![App Screenshot](assets/img/flops64_3.png)
-   ![App Screenshot](assets/img/flops64_4.png)
-3. Dio
-   Percobaan FLOPS64 5 kali
-   ![App Screenshot](assets/img/vonda1.png)
-   ![App Screenshot](assets/img/vonda2.png)
-   Percobaan IOPS64 5 kali
-   ![App Screenshot](assets/img/vonda3.png)
-   ![App Screenshot](assets/img/vonda4.png)
+1. Ragil<br>
+   Percobaan FLOPS64 5 kali<br>
+   ![App Screenshot](RagilFLOPS.png)<br>
+   Percobaan IOPS64 5 kali<br>
+   ![App Screenshot](RagilIOPS.png)<br>
+2. Hana<br>
+   Percobaan FLOPS64 5 kali<br>
+   ![App Screenshot](HanaFLOPS.png)<br>
+   Percobaan IOPS64 5 kali<br>
+   ![App Screenshot](HanaIOPS.png)<br>
+3. Dio<br>
+   Percobaan FLOPS64 5 kali<br>
+   ![App Screenshot](/DioFLOPS.png)<br>
+   Percobaan IOPS64 5 kali<br>
+   ![App Screenshot](DioIOPS.png)<br>
+
 
 ### Tabel Pengujian
 
