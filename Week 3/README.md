@@ -35,26 +35,28 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
 ## FlOPS dan IOPS
 
 ### Install GCC, make, dan GIT
-
-![App Screenshot](assets/img/install_gcc_make_git.png)
-
+<div
+<img src="/image/Install GCC,make, dn GIT.jpg">
+</div>
 ### How to run FLOPS dan IOPS
 
-![App Screenshot](assets/img/run_flops_iops.jpg)
+<div
+<img src="image/Flops dan iops.jpg">
+</div>
 
-1. Awang
+1. Ragil
    Percobaan FLOPS64 5 kali
-   ![App Screenshot](assets/img/awang_flops.jpg)
+   ![App Screenshot](assets/img/awang_flops.jp)
    Percobaan IOPS64 5 kali
    ![App Screenshot](assets/img/awang_iops.jpg)
-2. Hawa
+2. Hana
    Percobaan FLOPS64 5 kali
    ![App Screenshot](assets/img/flops64_1.png)
    ![App Screenshot](assets/img/flops64_2.png)
    Percobaan IOPS64 5 kali
    ![App Screenshot](assets/img/flops64_3.png)
    ![App Screenshot](assets/img/flops64_4.png)
-3. Vonda
+3. Dio
    Percobaan FLOPS64 5 kali
    ![App Screenshot](assets/img/vonda1.png)
    ![App Screenshot](assets/img/vonda2.png)
@@ -66,20 +68,18 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
 
 | Nama Anggota | Max Single Core FLOPS | Max Single Core IOPS | Max CPU FLOPS | Max CPU IOPS |
 | ------------ | --------------------- | -------------------- | ------------- | ------------ |
-| Awang        | 5.3                   | 5.2                  | 10.5          | 10.3         |
-| Hawa         | 2.2                   | 1.9                  | 4.3           | 3.8          |
-| Vonda        | 6                     | 4.5                  | 11.9          | 9            |
+| Ragil        | 6.2                   | 5.5                  | 23.2          | 22           |
+| Hana         | 6                     | 6.6                  | 12.1          | 13.2         |
+| Dio          | 10.8                  | 10.1                 | 21.6          | 20.2         |
+
 
 #### Analisa
 
-Dari data yang ditunjukkan oleh table diatas menunjukkan bahwa setiap laptop dengan ketidaksamaan processor menyebabkan hasil dari test FLOPS dan IOPS berbeda-beda tergantung kecepatan dari masing-masing CPU/processor.
-Mulai dari **Awang** dengan spesifikasi **Processor 11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz, 2995 Mhz, 2 Core(s), 4 Logical Processor(s)**, untuk spesifikasi yang ada di debian menggunakan 2 core, bisa memperoleh angka 5.3 Gigaflops dan 5.2 Gigaiops di single core dan Max CPU berada di angka 10.5 Gigaflops dan 10.3 Gigaiops.
-Lalu **Hawa** dengan spesifikasi **Processor 11th Gen Intel(R) Core(TM) i3-1115G4 @ 3.00GHz, 2995 Mhz, 2 Core(s), 4 Logical Processor(s)**, untuk spesifikasi yang ada di debian menggunakan 2 core, bisa memperoleh angka 4.3 Gigaflops dan 3.8 Gigaiops di single core dan Max CPU berada di angka 2.2 Gigaflops dan 1.9 Gigaiops.
-lalu **vonda** dengan spesifikasi **13th Gen Intel(R) Core(TM) i5-13500H, 2600 Mhz, 12 Core(s), 16 Logical Proces**, untuk spesifikasi yang ada di debian menggunakan 2 core, bisa memperoleh angka 6 Gigaflops dan 4.5 Gigaiops di single core dan Max CPU berada di angka 11.9 Gigaflops dan 9 Gigaiops.
+Analisa : Berdasarkan hasil pengujian kami, kinerja sistem dalam melakukan operasi floating point 64-bit menunjukkan variasi yang signifikan, dengan throughput CPU maksimum berkisar antara 9.98 hingga 23.22 Gigaflops. Sementara itu, operasi integer 64-bit menunjukkan fluktuasi yang lebih terkendali, dengan throughput CPU maksimum berkisar antara 12.72 hingga 13.22 Gigaiops. Meskipun throughput CPU maksimum pada operasi floating point biasanya lebih tinggi daripada operasi integer, perlu diperhatikan bahwa nilai throughput maksimum pada satu inti cenderung lebih rendah daripada throughput CPU maksimum, menyoroti adanya pembatasan kinerja yang bukan hanya berasal dari kemampuan pemrosesan inti tunggal. Oleh karena itu, dalam memilih sistem untuk aplikasi tertentu, penting untuk mempertimbangkan jenis operasi yang dominan dan memilih sistem dengan throughput yang sesuai dengan kebutuhan kinerja aplikasi tersebut.
 
 ### Kesimpulan
 
-Dari percobaan kelompok kami, bisa ditarik kesimpulan bahwa Perbandingan antara FLOPS dan IOPS tidak langsung karena keduanya mengukur aspek yang berbeda dari kinerja sistem komputasi. FLOPS lebih berkaitan dengan kemampuan prosesor untuk melakukan perhitungan matematika, sedangkan IOPS lebih berkaitan dengan kemampuan sistem penyimpanan untuk mengakses dan memanipulasi data. Meskipun keduanya merupakan ukuran kinerja yang penting dalam konteks tertentu, mereka tidak dapat secara langsung dibandingkan atau ditukar-tukar karena masing-masing mengukur aspek yang berbeda dari kinerja sistem komputasi.
+Berdasarkan hasil pengujian kelompok kami, kinerja sistem bervariasi tergantung pada jenis operasi yang dilakukan. Operasi floating point 64-bit menunjukkan fluktuasi yang signifikan dalam throughput CPU, sementara operasi integer 64-bit menunjukkan fluktuasi yang lebih kecil. Meskipun demikian, throughput CPU maksimum pada operasi floating point biasanya lebih tinggi daripada operasi integer. Ini menyoroti pentingnya mempertimbangkan jenis operasi yang dominan dalam aplikasi yang akan dijalankan, serta memilih sistem dengan throughput yang sesuai untuk memenuhi kebutuhan kinerja aplikasi tersebut.
 
 ## Referensi
 
