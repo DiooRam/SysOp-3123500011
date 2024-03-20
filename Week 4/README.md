@@ -4,7 +4,7 @@
 </div>
 <br />
 <div align="center">
-    <img src="image/pens logo.png" alt="Logo PENS">
+    <img src="Image/pens logo.png" alt="Logo PENS">
     <h3 style="text-align: center;">Disusun Oleh : </h3>
     <p style="text-align: center;">
         <strong>Roihanah Inayati Bashiroh (3123500005)</strong><br>
@@ -143,7 +143,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     ```
     $ ps
     ```
-     <img src="image/1.jpg">
+     <img src="Image/1.jpg">
    
 2. Output ke layar (standar output), input dari keyboard (standard input)
    ```
@@ -155,14 +155,14 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     [Ctrl-d]
    ```
 
-    <img src="image/2.jpg">
+    <img src="Image/2.jpg">
 
 3. Input nama direktori, output tidak ada (membuat direktori baru), bila terjadi error maka tampilan error pada layar (standard error)
    ```
    $ mkdir mydir
    $ mkdir mydir **(Terdapat pesan error)**
    ```
-    <img src="image/3.jpg">
+    <img src="Image/3.jpg">
 
 ## Percobaan 2 : Pembelokan (redirection)
 1. Pembelokan standar output
@@ -171,7 +171,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     Ini adalah teks yang saya simpan ke file myfile.txt
    ```
 
-   <img src="image/4.jpg">
+   <img src="Image/4.jpg">
 
 2. Pembelokan standar input, yaitu input dibelokkan dari keyboard menjadi dari file
    ```
@@ -179,7 +179,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     $ cat myfile.txt
    ```
 
-   <img src="image/5.jpg">
+   <img src="Image/5.jpg">
 
 3. Pembelokan standar error untuk disimpan di file
    ```
@@ -188,7 +188,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     $ cat myerror.txt
    ```
 
-   <img src="image/6.jpg">
+   <img src="Image/6.jpg">
 
 4. Notasi 2>&1 : pembelokan standar error (2>) adalah identik dengan file descriptor 1.
    ```
@@ -199,7 +199,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     $ cat out.txt
    ```
 
-   <img src="image/7.jpg">
+   <img src="Image/7.jpg">
 
 5. Notasi 1>&2 (atau >&2) : pembelokan standar output adalah sama dengan file descriptor 2 yaitu standar error
    ```
@@ -208,7 +208,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    $ cat baru
    ```
 
-   <img src="image/8.jpg">
+   <img src="Image/8.jpg">
 
 6. Notasi >> (append)
    ```
@@ -220,7 +220,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    $ cat surat
    ```
 
-   <img src="image/9.jpg">
+   <img src="Image/9.jpg">
 
 7. Notasi here document (<<++ .... ++) digunakan sebagai pembatas input dari keyboard. Perhatikan bahwa tanda pembatas dapat digantikan dengan tanda apa saja, namun harus sama dan tanda penutup harus diberikan pada awal baris
    ```
@@ -236,14 +236,14 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    %%%
    ```
 
-   <img src="image/10.jpg">
+   <img src="Image/10.jpg">
 
 8. Notasi – (input keyboard) adalah representan input dari keyboard. Artinya menampilkan file 1, kemudian menampilkan input dari keyboard dan menampilkan file 2. Perhatikan bahwa notasi “-“ berarti menyelipkan input dari keyboard
    ```
    $ cat myfile.txt – surat
    ```
 
-    <img src="image/11.jpg">
+    <img src="Image/11.jpg">
 
 ## Percobaan 3 : Pipa (pipeline)
 
@@ -259,8 +259,8 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    $ ls –l /etc | sort | more
    ```
 
-   <img src="image/12.jpg">
-   <img src="image/13.jpg">
+   <img src="Image/12.jpg">
+   <img src="Image/13.jpg">
 
 2. Untuk membelokkan standart output ke file, digunakan operator ">"
    ```
@@ -269,7 +269,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    $ cat output
    ```
 
-   <img src="image/14.jpg">
+   <img src="Image/14.jpg">
 
 3. Untuk menambahkan output ke file digunakan operator ">>"
    ```
@@ -277,14 +277,14 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    $ cat output
    ```
 
-   <img src="image/15.jpg">
+   <img src="Image/15.jpg">
 
 4. Untuk membelokkan standart input digunakan operator "<"
    ```
    $ cat < output
    ```
 
-  <img src="image/16.jpg">
+  <img src="Image/16.jpg">
 
 5. Pembelokan standart input dan standart output dapat dikombinasikan tetapi tidak boleh menggunakan nama file yang sama sebagai standart input dan output.
    ```
@@ -299,7 +299,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    $ cat out
    ```
 
-   <img src="image/17.jpg">
+   <img src="Image/17.jpg">
 
 ## Percobaan 4 : Filter
 1. Pipa juga digunakan untuk mengkombinasikan utilitas sistem untuk membentuk fungsi yang lebih kompleks
@@ -326,32 +326,32 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     $ cat kelas.txt | sort | uniq
    ```
 
-   <img src="image/18.jpg">
-   <img src="image/19.jpg">
-   <img src="image/20.jpg">
+   <img src="Image/18.jpg">
+   <img src="Image/19.jpg">
+   <img src="Image/20.jpg">
 
 ## LATIHAN:
 
 1. Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output ke file baru.
 
-   <img src="image/21.jpg">
-   <img src="image/22.jpg">
+   <img src="Image/21.jpg">
+   <img src="Image/22.jpg">
 
 2. Lihat daftar secara lengkap pada direktori /etc/passwd, belokkan tampilan standard output ke file baru tanpa menghapus file baru sebelumnya.
 
-   <img src="image/23.jpg">
+   <img src="Image/23.jpg">
 
 3. Urutkan file baru dengan cara membelokkan standard input.
 
-   <img src="image/24.jpg">
+   <img src="Image/24.jpg">
 
 4. Urutkan file baru dengan cara membelokkan standard input dan standard output ke file baru.urut.
 
-   <img src="image/25.jpg">
+   <img src="Image/25.jpg">
 
 5. Buatlah direktori latihan 2 sebanyak 2 kali dan belokkan standard error ke file rmdirerror.txt.
 
-   <img src="image/26.jpg">
+   <img src="Image/26.jpg">
 
 6. Urutkan kalimat berikut :
    ```
@@ -364,12 +364,12 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
    Dengan menggunakan notasi **here document (<@@@ ...@@@)** . [HINT](https://www.geeksforgeeks.org/how-to-use-here-document-in-bash-programming/)
 
-   <img src="image/27.jpg">
+   <img src="Image/27.jpg">
 
 7. Hitung jumlah baris, kata dan karakter dari file baru.urut dengan menggunakan filter dan tambahkan data tersebut ke file baru.
 
-   <img src="image/28.jpg">
-   <img src="image/29.jpg">
+   <img src="Image/28.jpg">
+   <img src="Image/29.jpg">
 
 8. Gunakan perintah di bawah ini dan perhatikan hasilnya.
    ```
@@ -385,7 +385,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     $ cat hello.txt | grep “dog” | grep –v “cat”
    ```
 
-   <img src="image/30.jpg">
+   <img src="Image/30.jpg">
 
 ## KESIMPULAN
 
