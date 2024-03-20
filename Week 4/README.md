@@ -4,14 +4,14 @@
 </div>
 <br />
 <div align="center">
-    <img src="Logo_PENS.png" alt="Logo PENS">
+    <img src="image/pens logo.png" alt="Logo PENS">
     <h3 style="text-align: center;">Disusun Oleh : </h3>
     <p style="text-align: center;">
         <strong>Roihanah Inayati Bashiroh (3123500005)</strong><br>
         <strong>Dio Ramadhan Widya Pamungkas (3123500011)</strong><br>
         <strong>Ragil Ridho Saputra (3122500016)</strong>
     </p>
-
+    
 <h3>Politeknik Elektronika Negeri Surabaya<br>Departemen Teknik
 Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2024/2025</h3>
     <hr>
@@ -143,8 +143,8 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     ```
     $ ps
     ```
-
-   ![App Screenshot](pcb1.1.png)
+     <img src="image/1.jpg">
+   
 2. Output ke layar (standar output), input dari keyboard (standard input)
    ```
     $ cat
@@ -155,15 +155,14 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     [Ctrl-d]
    ```
 
-   ![App Screenshot](pcb1.2.png)
+    <img src="image/2.jpg">
 
 3. Input nama direktori, output tidak ada (membuat direktori baru), bila terjadi error maka tampilan error pada layar (standard error)
    ```
    $ mkdir mydir
    $ mkdir mydir **(Terdapat pesan error)**
    ```
-
-   ![App Screenshot](pcb1.3.png)
+    <img src="image/3.jpg">
 
 ## Percobaan 2 : Pembelokan (redirection)
 1. Pembelokan standar output
@@ -172,7 +171,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     Ini adalah teks yang saya simpan ke file myfile.txt
    ```
 
-   ![App Screenshot](pcb2.1.png)
+   <img src="image/4.jpg">
 
 2. Pembelokan standar input, yaitu input dibelokkan dari keyboard menjadi dari file
    ```
@@ -180,7 +179,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     $ cat myfile.txt
    ```
 
-   ![App Screenshot](pcb2.2.png)
+   <img src="image/5.jpg">
 
 3. Pembelokan standar error untuk disimpan di file
    ```
@@ -189,7 +188,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     $ cat myerror.txt
    ```
 
-   ![App Screenshot](pcb2.3.png)
+   <img src="image/6.jpg">
 
 4. Notasi 2>&1 : pembelokan standar error (2>) adalah identik dengan file descriptor 1.
    ```
@@ -200,7 +199,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     $ cat out.txt
    ```
 
-   ![App Screenshot](pcb2.4.png)
+   <img src="image/7.jpg">
 
 5. Notasi 1>&2 (atau >&2) : pembelokan standar output adalah sama dengan file descriptor 2 yaitu standar error
    ```
@@ -209,7 +208,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    $ cat baru
    ```
 
-   ![App Screenshot](pcb2.5.png)
+   <img src="image/8.jpg">
 
 6. Notasi >> (append)
    ```
@@ -221,7 +220,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    $ cat surat
    ```
 
-   ![App Screenshot](pcb2.6.png)
+   <img src="image/9.jpg">
 
 7. Notasi here document (<<++ .... ++) digunakan sebagai pembatas input dari keyboard. Perhatikan bahwa tanda pembatas dapat digantikan dengan tanda apa saja, namun harus sama dan tanda penutup harus diberikan pada awal baris
    ```
@@ -237,14 +236,14 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    %%%
    ```
 
-   ![App Screenshot](pcb2.7.png)
+   <img src="image/10.jpg">
 
 8. Notasi – (input keyboard) adalah representan input dari keyboard. Artinya menampilkan file 1, kemudian menampilkan input dari keyboard dan menampilkan file 2. Perhatikan bahwa notasi “-“ berarti menyelipkan input dari keyboard
    ```
    $ cat myfile.txt – surat
    ```
 
-   ![App Screenshot](pcb2.8.png)
+    <img src="image/11.jpg">
 
 ## Percobaan 3 : Pipa (pipeline)
 
@@ -260,10 +259,8 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    $ ls –l /etc | sort | more
    ```
 
-   ![App Screenshot](pcb3.1.png)
-   ![App Screenshot](pcb3.111.png)
-   ![App Screenshot](pcb3.11.png)
-   ![App Screenshot](pcb3.1111.png)
+   <img src="image/12.jpg">
+   <img src="image/13.jpg">
 
 2. Untuk membelokkan standart output ke file, digunakan operator ">"
    ```
@@ -272,7 +269,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    $ cat output
    ```
 
-   ![App Screenshot](pcb3.2.png)
+   <img src="image/14.jpg">
 
 3. Untuk menambahkan output ke file digunakan operator ">>"
    ```
@@ -280,14 +277,14 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    $ cat output
    ```
 
-   ![App Screenshot](pcb3.3.png)
+   <img src="image/15.jpg">
 
 4. Untuk membelokkan standart input digunakan operator "<"
    ```
    $ cat < output
    ```
 
-   ![App Screenshot](pcb3.4.png)
+  <img src="image/16.jpg">
 
 5. Pembelokan standart input dan standart output dapat dikombinasikan tetapi tidak boleh menggunakan nama file yang sama sebagai standart input dan output.
    ```
@@ -302,7 +299,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    $ cat out
    ```
 
-   ![App Screenshot](pcb3.5.png)
+   <img src="image/17.jpg">
 
 ## Percobaan 4 : Filter
 1. Pipa juga digunakan untuk mengkombinasikan utilitas sistem untuk membentuk fungsi yang lebih kompleks
@@ -329,32 +326,32 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     $ cat kelas.txt | sort | uniq
    ```
 
-   ![App Screenshot](pcb4.1.png)
-   ![App Screenshot](pcb4.11.png)
-   ![App Screenshot](pcb4.111.png)
+   <img src="image/18.jpg">
+   <img src="image/19.jpg">
+   <img src="image/20.jpg">
 
 ## LATIHAN:
 
 1. Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output ke file baru.
 
-   ![App Screenshot](lat1.png)
-   ![App Screenshot](lat11.png)
+   <img src="image/21.jpg">
+   <img src="image/22.jpg">
 
 2. Lihat daftar secara lengkap pada direktori /etc/passwd, belokkan tampilan standard output ke file baru tanpa menghapus file baru sebelumnya.
 
-   ![App Screenshot](lat2.png)
+   <img src="image/23.jpg">
 
 3. Urutkan file baru dengan cara membelokkan standard input.
 
-   ![App Screenshot](lat3.png)
+   <img src="image/24.jpg">
 
 4. Urutkan file baru dengan cara membelokkan standard input dan standard output ke file baru.urut.
 
-   ![App Screenshot](lat4.png)
+   <img src="image/25.jpg">
 
 5. Buatlah direktori latihan 2 sebanyak 2 kali dan belokkan standard error ke file rmdirerror.txt.
 
-   ![App Screenshot](lat5.png)
+   <img src="image/26.jpg">
 
 6. Urutkan kalimat berikut :
    ```
@@ -367,12 +364,12 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
    Dengan menggunakan notasi **here document (<@@@ ...@@@)** . [HINT](https://www.geeksforgeeks.org/how-to-use-here-document-in-bash-programming/)
 
-   ![App Screenshot](lat6.png)
+   <img src="image/27.jpg">
 
 7. Hitung jumlah baris, kata dan karakter dari file baru.urut dengan menggunakan filter dan tambahkan data tersebut ke file baru.
 
-   ![App Screenshot](lat7.png)
-   ![App Screenshot](lat77.png)
+   <img src="image/28.jpg">
+   <img src="image/29.jpg">
 
 8. Gunakan perintah di bawah ini dan perhatikan hasilnya.
    ```
@@ -388,7 +385,15 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     $ cat hello.txt | grep “dog” | grep –v “cat”
    ```
 
-   ![App Screenshot](lat8.png)
+   <img src="image/30.jpg">
+
+## KESIMPULAN
+
+Sebuah proses memerlukan Input dan Output. Instruksi (command) yang diberikan pada Linux melalui Shell disebut sebagai eksekusi program yang selanjutnya disebut proses. Setiap kali instruksi diberikan, maka Linux kernel akan menciptakan sebuah proses dengan memberikan nomor PID (Process Identity). Proses dalam Linux selalu membutuhkan Input dan menghasilkan suatu Output. Linux berkomunikasi dengan file melalui file descriptor yang direpresentasikan Pada Linux, terdapat metode File Descriptor, Redirection, Pipelining, dan filter. 
+
+File descriptor merupakan cara Linux berkomunikasi dengan file. File descriptor direpresentasikan melalui angka yang dimulai dari 0, 1, 2 dan seterusnya. Redirection adalah pembelokan yang dilakukan untuk standar input, output, dan error dan untuk mengalihkan file descriptor dari 0, 1, dan 2. Pipeline adalah 
+suatu mekanisme pipa yang digunakan sebagai alat komunikasi antar proses. Sedangkan filter adalah utilitas Linux yang dapat memproses standard input (dari keyboard) dan menampilkan hasilnya pada standard output (layar).
+
 
 ## LAPORAN RESMI:
 
