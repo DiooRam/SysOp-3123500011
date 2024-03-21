@@ -389,6 +389,17 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    <img src="Image/19.jpg">
    <img src="Image/20.jpg">
 
+   <br>
+   Analisis:
+   <br>Pertama, perintah `$ w -h | grep <user>` digunakan untuk menampilkan informasi tentang pengguna yang sedang masuk ke sistem tanpa header, dengan menggunakan grep untuk mencari baris yang mengandung kata <user>.
+Perintah berikutnya, `$ grep <user> /etc/passwd`, bertujuan untuk mencari entri pengguna dengan nama pengguna <user> dalam file /etc/passwd, yang berisi daftar pengguna yang terdaftar di sistem.
+Perintah `$ ls /etc | wc` digunakan untuk menghitung jumlah baris, kata, dan byte dari hasil perintah `ls /etc`, yaitu daftar isi direktori /etc.
+Perintah `$ ls /etc | wc -l` bertujuan untuk menghitung jumlah file dan direktori dalam direktori /etc, dengan menggunakan opsi -l untuk hanya menghitung jumlah baris (yaitu jumlah file dan direktori).
+Perintah berikutnya menciptakan dua file teks (kelas1.txt dan kelas2.txt) dengan menggunakan perintah `cat > namafile`. Setiap file berisi daftar nama siswa.
+Setelah itu, perintah `$ cat kelas1.txt kelas2.txt | sort` digunakan untuk menggabungkan isi dari kedua file dan mengurutkannya.
+Perintah `$ cat kelas1.txt kelas2.txt > kelas.txt` bertujuan untuk menggabungkan isi dari kedua file menjadi satu file bernama kelas.txt.
+Perintah `$ cat kelas.txt | sort | uniq` bertujuan untuk menggabungkan isi dari file kelas.txt, mengurutkannya, dan menghilangkan baris yang duplikat menggunakan perintah `uniq`.<br>
+
 ## LATIHAN:
 
 1. Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output ke file baru.
@@ -396,21 +407,37 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    <img src="Image/21.jpg">
    <img src="Image/22.jpg">
 
+   <br>
+   Analisis:
+   <br>Pada latihan ini, perintah pertama yang digunakan adalah ls untuk melihat daftar file, kemudian mengalihkan output dari ls untuk disimpan ke dalam file baru, dan kemudian mencetaknya.<br>
+
 2. Lihat daftar secara lengkap pada direktori /etc/passwd, belokkan tampilan standard output ke file baru tanpa menghapus file baru sebelumnya.
 
    <img src="Image/23.jpg">
+   <br>
+   Analisis:
+   <br>Menggunakan `ls` untuk melihat direktori /etc/passwd, dan mengalihkan outputnya ke dalam file baru tanpa menghapus isi dari file sebelumnya menggunakan operator >>.<br>
 
 3. Urutkan file baru dengan cara membelokkan standard input.
 
    <img src="Image/24.jpg">
+   <br>
+   Analisis:
+   <br>Membelokkan standard input dari file baru dengan perintah `sort` untuk mengurutkan isi dari file baru sesuai dengan huruf pertama. Di sini, file baru menjadi input dari perintah sort.<br>
 
 4. Urutkan file baru dengan cara membelokkan standard input dan standard output ke file baru.urut.
 
    <img src="Image/25.jpg">
+   <br>
+   Analisis:
+   <br>Membelokkan standard input dari file baru dengan perintah `sort` untuk mengurutkan isi dari file baru sesuai dengan huruf pertama. Di sini, file baru menjadi input dari perintah sort. Kemudian, output dari perintah sort `< baru` dibelokkan ke dalam file `baru.urut`, dan dicetak menggunakan `cat`.<br>
 
 5. Buatlah direktori latihan 2 sebanyak 2 kali dan belokkan standard error ke file rmdirerror.txt.
 
    <img src="Image/26.jpg">
+   <br>
+   Analisis:
+   <br>Membuat direktori `latihan2` menggunakan perintah `mkdir` sebanyak 2 kali, lalu akan terjadi output error. Output error tersebut dibelokkan ke dalam file `rmdierror.txt` menggunakan operator pembelokan standard error yaitu `2>`. Kemudian mencetak file `rmdierror.txt` menggunakan perintah `cat`.<br>
 
 6. Urutkan kalimat berikut :
    ```
@@ -424,11 +451,17 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    Dengan menggunakan notasi **here document (<@@@ ...@@@)** . [HINT](https://www.geeksforgeeks.org/how-to-use-here-document-in-bash-programming/)
 
    <img src="Image/27.jpg">
+   <br>
+   Analisis:
+   <br>Membuat list nama kota menggunakan notasi here document `<<@....@` dan menyimpannya ke dalam file `kota.txt`, lalu mengurutkan isi dari file tersebut menggunakan perintah `sort`.<br>
 
 7. Hitung jumlah baris, kata dan karakter dari file baru.urut dengan menggunakan filter dan tambahkan data tersebut ke file baru.
 
    <img src="Image/28.jpg">
    <img src="Image/29.jpg">
+   <br>
+   Analisis:
+   <br>Membelokkan standard input dari `cat`, sehingga `baru.urut` menjadi input untuk perintah `cat`. Lalu dengan menggunakan pipeline dilanjutkan dengan perintah `wc` untuk menghitung jumlah baris, kata, dan karakter dari `baru.urut`. Output dari perintah yang tadi dibelokkan menuju file baru tanpa menghapus isi dari file baru sebelumnya menggunakan operator `>>`.<br>
 
 8. Gunakan perintah di bawah ini dan perhatikan hasilnya.
    ```
@@ -445,6 +478,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    <img src="Image/30.jpg">
+   <br>
+   Analisis:
+   <br>Dengan menggunakan perintah `$ cat > hello.txt`, Anda membuat file baru bernama "hello.txt" yang berisi beberapa baris teks yang berisi kata-kata seperti "dog", "cat", "kuda", dan "ayam". Kemudian, dengan menggunakan perintah `$ cat hello.txt | sort | uniq`, Anda membaca isi file "hello.txt" secara alfabetis dan kemudian menggunakan `uniq` untuk menghilangkan kata-kata yang sama.<br>
 
 ## KESIMPULAN
 
