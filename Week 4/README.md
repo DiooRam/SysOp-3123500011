@@ -404,7 +404,7 @@ Perintah `$ cat kelas.txt | sort | uniq` bertujuan untuk menggabungkan isi dari 
 
 1. Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output ke file baru.
 
-   <img src="Image/21.jpg">
+   <img src="Image/tstttt.png">
    <img src="Image/22.jpg">
 
    <br>
