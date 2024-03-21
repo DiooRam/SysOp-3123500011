@@ -260,7 +260,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    <img src="Image/12.jpg">
-   <img src="Image/13.jpg">
+   <img src="Image/Tst.jpg">
 
 2. Untuk membelokkan standart output ke file, digunakan operator ">"
    ```
