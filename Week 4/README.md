@@ -458,7 +458,7 @@ Perintah `$ cat kelas.txt | sort | uniq` bertujuan untuk menggabungkan isi dari 
 7. Hitung jumlah baris, kata dan karakter dari file baru.urut dengan menggunakan filter dan tambahkan data tersebut ke file baru.
 
    <img src="Image/28.jpg">
-   <img src="Image/tstt.png">
+   <img src="Image/tsttt.png">
    <br>
    Analisis:
    <br>Membelokkan standard input dari `cat`, sehingga `baru.urut` menjadi input untuk perintah `cat`. Lalu dengan menggunakan pipeline dilanjutkan dengan perintah `wc` untuk menghitung jumlah baris, kata, dan karakter dari `baru.urut`. Output dari perintah yang tadi dibelokkan menuju file baru tanpa menghapus isi dari file baru sebelumnya menggunakan operator `>>`.<br>
