@@ -72,11 +72,15 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
 
 #### Analisa
 
-Analisa : Berdasarkan hasil pengujian kami, kinerja sistem dalam melakukan operasi floating point 64-bit menunjukkan variasi yang signifikan, dengan throughput CPU maksimum berkisar antara 9.98 hingga 23.22 Gigaflops. Sementara itu, operasi integer 64-bit menunjukkan fluktuasi yang lebih terkendali, dengan throughput CPU maksimum berkisar antara 12.72 hingga 13.22 Gigaiops. Meskipun throughput CPU maksimum pada operasi floating point biasanya lebih tinggi daripada operasi integer, perlu diperhatikan bahwa nilai throughput maksimum pada satu inti cenderung lebih rendah daripada throughput CPU maksimum, menyoroti adanya pembatasan kinerja yang bukan hanya berasal dari kemampuan pemrosesan inti tunggal. Oleh karena itu, dalam memilih sistem untuk aplikasi tertentu, penting untuk mempertimbangkan jenis operasi yang dominan dan memilih sistem dengan throughput yang sesuai dengan kebutuhan kinerja aplikasi tersebut.
+Percobaan yang kami lakukan meliputi : Penggunaan program benchmark untuk mengetahui dan mengukur jumlah IOPS dan FLOPS pada CPU masing-masing anggota sebanyak 5 kali percobaan yang nantinya akan dicari jumlah maksimum dan minimum. Hasil yang didapat menunjukkan bahwa IOPS memiliki total throughput dan throughput single core yang lebih tinggi dibandingkan dengan FLOPS.
+
+Kinerja sistem dalam melakukan operasi floating point 64-bit diatas dikarenakan penggunaan laptop yang digunakan setiap anggota memiliki perbedaan processor, membuat hasil percobaan menunjukkan variasi yang signifikan, dengan throughput CPU maksimum berkisar antara 9.98 hingga 23.22 Gigaflops. Sementara itu, operasi integer 64-bit menunjukkan fluktuasi yang lebih terkendali, dengan throughput CPU maksimum berkisar antara 12.72 hingga 13.22 Gigaiops.
 
 ### Kesimpulan
 
-Berdasarkan hasil pengujian kelompok kami, kinerja sistem bervariasi tergantung pada jenis operasi yang dilakukan. Operasi floating point 64-bit menunjukkan fluktuasi yang signifikan dalam throughput CPU, sementara operasi integer 64-bit menunjukkan fluktuasi yang lebih kecil. Meskipun demikian, throughput CPU maksimum pada operasi floating point biasanya lebih tinggi daripada operasi integer. Ini menyoroti pentingnya mempertimbangkan jenis operasi yang dominan dalam aplikasi yang akan dijalankan, serta memilih sistem dengan throughput yang sesuai untuk memenuhi kebutuhan kinerja aplikasi tersebut.
+Kesimpulan dari percobaan tersebut adalah bahwa percobaan IOPS berkaitan dengan kinerja perangkat penyimpanan dalam melakukan operasi input/output, sementara percobaan FLOPS berkaitan dengan kinerja prosesor dalam melakukan operasi perhitungan floating point. Dalam percobaan yang dilakukan, hasil menunjukkan bahwa IOPS memiliki total throughput dan throughput single core yang lebih tinggi daripada FLOPS. Perbedaan dalam kinerja sistem terkait dengan operasi floating point 64-bit disebabkan oleh perbedaan processor pada laptop yang digunakan oleh setiap anggota. Hal ini menyebabkan hasil percobaan menunjukkan perbedaan hasil dalam throughput CPU maksimum, baik untuk operasi floating point maupun integer.
+
+
 
 ## Referensi
 
