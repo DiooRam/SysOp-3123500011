@@ -144,6 +144,11 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     $ ps
     ```
      <img src="Image/1.jpg">
+
+        <br>
+   Analisis: 
+    <br>Perintah ps digunakan untuk menampilkan daftar proses yang sedang berjalan di sistem operasi. Outputnya memuat informasi tentang setiap proses, seperti:<br>
+    PID (Process ID): Untuk mengidentifikasi setiap proses unik, TTY (TeleType): Terminal yang terkait dengan proses, TIME: Waktu CPU kumulatif yang digunakan oleh proses, dalam format menit dan detik, CMD (Command): Nama program atau perintah yang memulai proses.<br>
    
 2. Output ke layar (standar output), input dari keyboard (standard input)
    ```
@@ -157,12 +162,19 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
 
     <img src="Image/2.jpg">
 
+    <br>
+    Analisis:
+    <br>Cat digunakan untuk menampilkan konten dan dapat dihentikan dengan menekan Ctrl-D.<br>
+
 3. Input nama direktori, output tidak ada (membuat direktori baru), bila terjadi error maka tampilan error pada layar (standard error)
    ```
    $ mkdir mydir
    $ mkdir mydir **(Terdapat pesan error)**
    ```
     <img src="Image/3.jpg">
+    <br>
+    Analisis:
+    <br>mkdir adalah perintah untuk membuat direktori baru dan bila terjadi error maka akan tampil di layar.<br>
 
 ## Percobaan 2 : Pembelokan (redirection)
 1. Pembelokan standar output
@@ -172,6 +184,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    <img src="Image/4.jpg">
+    <br>
+    Analisis:
+    <br>Perintah cat1> myfile.txt digunakan untuk mengcopy input dan menyimpannya didalam myfile.txt.<br>
 
 2. Pembelokan standar input, yaitu input dibelokkan dari keyboard menjadi dari file
    ```
@@ -180,6 +195,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    <img src="Image/5.jpg">
+   <br>
+   Analisis:
+   <br>Perintah cat 0> digunakan untuk menunjuk sebuah input yang berasal dari myfile.<br>
 
 3. Pembelokan standar error untuk disimpan di file
    ```
@@ -189,7 +207,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    <img src="Image/6.jpg">
-
+    <br>
+    Analisis:
+    <br>Jika terdapat pesan error didirectory maka akan dialihkan ke file my error menggunakan 2><br>
 4. Notasi 2>&1 : pembelokan standar error (2>) adalah identik dengan file descriptor 1.
    ```
     $ ls filebaru (Terdapat pesan error)
@@ -200,6 +220,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    <img src="Image/7.jpg">
+   <br>
+   Analisis:
+   <br>Membelokkan error menggunakan 2>&1, dan mengarahkan standar error ke dalam file out,txt<br>
 
 5. Notasi 1>&2 (atau >&2) : pembelokan standar output adalah sama dengan file descriptor 2 yaitu standar error
    ```
@@ -209,6 +232,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    <img src="Image/8.jpg">
+   <br>
+   Analisis:
+   <br>Perintah echo digunakan untuk menulis teks ke dalam file baru menggunakan operator >. Kemudian pesan dari echo akan dimasukkan ke dalam file baru. cat biasanya digunakan untuk menampilkan isi dari file       atau standar input.<br>
 
 6. Notasi >> (append)
    ```
@@ -221,6 +247,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    <img src="Image/9.jpg">
+   <br>
+   Analisis:
+   <br>Menginputkan teks menggunakan perintah echo dan mengirimkan teks tersebut ke surat. Untuk mengakhiri input teks, menggunakan notasi >><br>
 
 7. Notasi here document (<<++ .... ++) digunakan sebagai pembatas input dari keyboard. Perhatikan bahwa tanda pembatas dapat digantikan dengan tanda apa saja, namun harus sama dan tanda penutup harus diberikan pada awal baris
    ```
@@ -237,6 +266,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    <img src="Image/10.jpg">
+   <br>
+   Analisis:
+   <br>Menginputkan sebuah teks dengan perintah cat <<++ dan cat <<%%%, dan ketika selesai input, harus memberikan batasan yang sama seperti contoh perintah ++ dan %%%.<br>
 
 8. Notasi – (input keyboard) adalah representan input dari keyboard. Artinya menampilkan file 1, kemudian menampilkan input dari keyboard dan menampilkan file 2. Perhatikan bahwa notasi “-“ berarti menyelipkan input dari keyboard
    ```
@@ -244,6 +276,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
     <img src="Image/11.jpg">
+    <br>
+    Analisis:
+    <br>Perintah $ cat  myfile.txt untuk menampilkan isi dua file. Pertama, perintah cat akan menampilkan isi file myfile.txt. Kemudian, perintah cat akan menampilkan isi file surat yang disimpan ke file      myfile.txt<br>
 
 ## Percobaan 3 : Pipa (pipeline)
 
@@ -260,7 +295,21 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    <img src="Image/12.jpg">
-   <img src="Image/Tst.jpg">
+   <img src="Image/tst.png">
+
+   <br>
+   Analisis:
+   <br>Perintah who menampilkan daftar pengguna yang sedang masuk (logged in) ke sistem.<br>
+   <br>Menggunakan operator pipe (|), perintah who diarahkan ke perintah sort, yang kemudian mengurutkan daftar pengguna sesuai abjad berdasarkan nama pengguna.<br>
+   <br>Perintah who | sort -r mengurutkan daftar pengguna secara terbalik (dari belakang ke depan).<br>
+   <br>Menggunakan operator redirection (>), output dari perintah who dialihkan ke dalam file tmp, menyimpan daftar pengguna yang sedang masuk ke dalam file tersebut.<br>
+   <br>Perintah sort tmp mengurutkan isi dari file tmp, yang berisi daftar pengguna yang sedang masuk sesuai urutan abjad.<br>
+   <br>Perintah rm tmp menghapus file tmp yang sudah tidak diperlukan lagi setelah penggunaan sebelumnya.<br>
+   <br>Perintah ls -l /etc | more menampilkan daftar isi dari direktori /etc secara lebih detail dengan perintah ls -l, dan outputnya dialihkan ke program more.<br>
+   <br>Perintah ls -l /etc | sort | more mengurutkan daftar isi dari perintah sebelumnya sebelum outputnya ditampilkan oleh more.<br>
+
+
+    
 
 2. Untuk membelokkan standart output ke file, digunakan operator ">"
    ```
@@ -270,6 +319,10 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    <img src="Image/14.jpg">
+   <br>
+   Analisis:
+   <br>Perintah ($ echo hello) akan menampilkan teks "hello" di terminal pada baris pertama. Tanda > digunakan untuk mengarahkan output dari perintah echo ke dalam file output yang menampilkan "hello".<br>
+
 
 3. Untuk menambahkan output ke file digunakan operator ">>"
    ```
@@ -278,6 +331,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    <img src="Image/15.jpg">
+   <br>
+   Analisis:
+   <br>Perintah ($ echo bye >> output) akan menambahkan teks "bye" ke dalam file. Tanda >> digunakan untuk menambahkan teks ke akhir file tanpa menghapus konten yang sudah ada, sehingga akan menampilkan "hello" dan "bye" pada baris yang berbeda.<br>
 
 4. Untuk membelokkan standart input digunakan operator "<"
    ```
@@ -285,6 +341,9 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
   <img src="Image/16.jpg">
+  <br>
+  Analisis:
+  <br>Tanda < digunakan untuk mengarahkan input kedalam suatu file lainnya<br>
 
 5. Pembelokan standart input dan standart output dapat dikombinasikan tetapi tidak boleh menggunakan nama file yang sama sebagai standart input dan output.
    ```
@@ -300,7 +359,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    ```
 
    <img src="Image/17.jpg">
-
+ 
 ## Percobaan 4 : Filter
 1. Pipa juga digunakan untuk mengkombinasikan utilitas sistem untuk membentuk fungsi yang lebih kompleks
    ```
