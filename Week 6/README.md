@@ -169,3 +169,129 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2023/2024</h3>
 
 17. Logout dan login kembali sebagai user.
 
+
+### Latihan : Cobalah format tampilan ps dengan opsi berikut dan perhatikan hasil tampilannya
+
+1. Masuk ke tty2 dengan Ctrl+Alt+F2. Ketik ps –au dan tekan Enter. Kemudian perhatikan keluaran sebagai berikut :
+
+     <img src="image/25.png" alt="">
+   - Sebutkan nama-nama proses yang bukan root
+
+     - Semua proses kecuali `/bin/login -p--` adalah bukan root
+
+   - Tulis PID dan COMMAND dari proses yang paling banyak menggunakan CPU time
+
+     - PID : 1135
+     - COMMAND : -bash
+
+   - Sebutkan buyut proses dan PID dari proses tersebut
+
+     - `/usr/libexec/gdm-wayland-session` dengan PID 656
+
+   - Sebutkan beberapa proses daemon
+
+     - Pada beberapa proses yang tampil pada gambar di atas, tidak ada proses daemon.
+
+   - Pada prompt login lakukan hal- hal sebagai berikut : `$ csh` `$ who` `$ bash` `$ ls` `$ sh` `$ ps`
+
+     <img src="image/26.png" alt="">
+
+     Analisa :
+     Perintah `$ bash` digunakan untuk mengkonversi instruksi yang dimasukkan ke dalam bahasa biner yang dapat di mengerti oleh kernel Linux, perintah `$ ls` digunakan untuk menunjukkan semua file yang ada dalam direktori aktif, dan perintah `$ csh` adalah sebuah shell interaktif yang memiliki lebih banyak sintaks dibandingkan dengan Bourne Shell. PID, TTY, TIME, dan CMD membentuk empat kolom utama tampilan perintah ps, yang menampilkan daftar proses yang sedang berlangsung dalam sistem. Perintah `$ who` menampilkan daftar pengguna yang saat ini masuk ke sistem. Ini menunjukkan nama pengguna, terminal yang mereka gunakan, waktu login, dan informasi lainnya. Perintah ini digunakan dengan sering untuk mengetahui siapa yang sedang menggunakan sistem atau
+
+   - Sebutkan PID yang paling besar dan kemudian buat urut-urutan proses sampai ke PPID = 1.
+
+       <img src="image/27.png" alt="">
+
+     - PID = 1557 (ps)
+     - PID = 1556 (sh)
+     - PID = 1553 (bash)
+     - PID = 1551 (csh)
+     - PID = 1128 (bash)
+
+
+2. Cobalah format tampilan ps dengan opsi berikut dan perhatikan hasil tampilannya :
+
+   - `-f` daftar penuh
+
+      <img src="image/28.png" alt="">
+
+   - `-j` format job
+
+       <img src="image/29.png" alt="">
+
+   - `j` format job control
+
+       <img src="image/30.png" alt="">
+
+   - `l` daftar memanjang
+
+       <img src="image/31.png" alt="">
+
+   - `s` format sinyal
+
+       <img src="image/32.png" alt="">
+
+   - `v` format virtual memory
+
+       <img src="image/33.png" alt="">
+
+   - `X` format register i386
+
+       <img src="image/34.png" alt="">
+
+3. Lakukan urutan pekerjaan berikut :
+
+   - Gunakan perintah `find` ke seluruh direktory pada sistem, belokkan output sehingga daftar direktori dialihkan ke file `directories.txt` dan daftar pesan error dialihkan ke file `errors.txt`
+
+      <img src="image/35.png" alt="">
+
+   - Gunakan perintah `sleep 5`. Apa yang terjadi dengan perintah ini ?
+
+      <img src="image/35.png" alt="">
+
+   - Jalankan perintah pada background menggunakan `&`
+
+      <img src="image/36.png" alt="">
+
+   - Jalankan `sleep 15` pada foreground, hentikan sementara dengan Ctrl-Z dan kemudian letakkan pada background dengan `bg`. Ketikkan `jobs`. Ketikkan `ps`. Kembalikan job ke foreground dengan perintah `fg`.
+
+       <img src="image/37.png" alt="">
+
+   - Jalankan `sleep 15` pada background menggunakan `&` dan kemudian gunakan perintah `kill` untuk menghentikan proses diikuti job number.
+
+     <img src="image/37.1.png" alt="">
+
+
+   - Jalankan `sleep 15` pada background menggunakan `&` dan kemudian gunakan `kill` untuk menghentikan sementara proses. Gunakan `bg` untuk melanjutkan menjalankan proses.
+
+     <img src="image/37.1.png" alt="">
+
+
+   - Jalankan `sleep 60` pada background 5 kali dan terminasi semua pada dengan menggunakan perintah `killall`.
+
+      <img src="image/38.png" alt="">
+      <img src="image/38.1.png" alt="">
+
+
+   - Gunakan perintah `ps`, `w` dan `top` untuk menunjukkan semua proses yang sedang dieksekusi.
+
+      <img src="image/39.png" alt="">
+          
+      <img src="image/40.png" alt="">
+
+
+   - Gunakan perintah `ps –aeH` untuk menampilkan hierarki proses. Carilah init proses. Apakah Anda bisa identifikasi sistem daemon yang penting ? Dapatkan Anda identifikasi shell dan subproses ?
+
+     <img src="image/40.png" alt="">
+
+
+   - Kombinasikan `ps –fae` dan grep, apa yang Anda lihat ?
+
+     <img src="image/42.png" alt="">
+
+
+   - Jalankan proses `sleep 300` pada background. Log off komputer dan log in kembali. Lihat daftar semua proses yang berjalan. Apa yang terjadi pada proses sleep ?
+
+     <img src="image/43.png" alt="">
+
