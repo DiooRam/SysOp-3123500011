@@ -4,7 +4,7 @@
 </div>
 <br />
 <div align="center">
-    <img src="Week 7 UTS/image/logo pens.png" alt=""> alt="Logo PENS">
+    <img src="Week 7 UTS/image/pens logo.png" alt="Logo PENS">
     <h3 style="text-align: center;">Disusun Oleh : </h3>
     <p style="text-align: center;">
         <strong>Roihanah Inayati Bashiroh (3123500005)</strong><br>
