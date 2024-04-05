@@ -104,7 +104,7 @@ return 0;
 
 <img src="Week 7 UTS/image/1.png" alt="">
 
-deskripsi : 
+Deskripsi : 
 
 
 Visualisasi :
