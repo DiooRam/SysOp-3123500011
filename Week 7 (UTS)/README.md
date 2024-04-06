@@ -20,7 +20,6 @@ Informatika Dan Komputer<br>Program Studi Teknik Informatika<br>2024/2025</h3>
 
 
 ### Soal 
-Week 7 UTS/image/0.1.png
 1. Fork : Parent - Child Process
 Buat tulisan tentang konsep fork dan implementasinya dengan menggunakan bahasa pemrograman C! (minimal 2 paragraf disertai dengan gambar)
 Akses dan clonning repo : https://github.com/ferryastika/operatingsystem.git
