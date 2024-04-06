@@ -32,7 +32,9 @@ Buatlah program perkalian 2 matriks [4 x 4] dalam bahasa C yang memanfaatkan for
 ### Jawaban nomor 1
 1.
 <img src="Week 7 UTS/image/0.1.png" alt="">
+Fork merupakan salah satu konsep fundamental dalam sistem operasi Unix yang memungkinkan proses untuk membuat salinan dirinya sendiri. Dalam konteks bahasa pemrograman C, fungsi fork() digunakan untuk menciptakan proses baru yang disebut sebagai child process. Child process ini merupakan salinan identik dari proses parent yang memanggilnya, termasuk kode program dan lingkungan eksekusinya. Setelah proses child terbentuk, kedua proses (parent dan child) akan berjalan secara independen satu sama lain, memiliki ruang alamat memori yang terpisah, namun saling berbagi sumber daya sistem yang sama. Fork sangat berguna dalam paradigma pemrograman multiproses, memungkinkan aplikasi untuk melakukan tugas-tugas secara bersamaan atau paralel.
 
+Implementasi fork dalam bahasa pemrograman C cukup sederhana. Berikut adalah contoh kode sederhana yang menggunakan fork untuk membuat proses child:
 
 Contoh Implementasi menggunakan bahasa C : 
 <br>
@@ -66,6 +68,8 @@ int main() {
 
 
 <img src="Week 7 UTS/image/3.png" alt="">
+
+Analisa : Program ini mencetak informasi tentang PID (Process ID), Child ID, dan PPID (Parent Process ID) saat proses utama dipanggil dengan PID 2488 dan parent ID 2246. Saat proses utama menggunakan fungsi fork(), informasi tersebut dicetak dengan penjelasan yang menunjukkan proses induk dan anak, masing-masing memiliki PID dan PPID. Proses induk memiliki PID 2488 dan PPID 2246, sama dengan proses utama. Proses anak memiliki PID 2489 dan PPID 1130, dengan PID yang jelas lebih besar daripada proses induk.
 
 - hasil eksekusi dari kode program fork01.c, fork02.c, fork03.c, fork04.c, fork05.cdan fork06.c.
 
@@ -104,9 +108,6 @@ return 0;
 
 <img src="Week 7 UTS/image/1.png" alt="">
 
-Deskripsi : 
-
-
 Visualisasi :
 
 
@@ -133,6 +134,7 @@ int main() {
   return 0;
 }
 ```
+Analisa: Tampilan di atas menunjukkan bahwa program sedang melakukan proses forking berulang, menghasilkan sejumlah besar proses anak yang memiliki identitas yang berbeda-beda. Setiap proses mencatat PID (Process ID) dan PPID (Parent Process ID) miliknya, serta UID (User ID) yang sama untuk pemilik proses. Ini mencerminkan prinsip dasar dari panggilan sistem "fork" di mana sistem operasi menciptakan salinan dari proses yang sedang berjalan.
 
 2. fork02
 
@@ -166,10 +168,6 @@ int main(void) {
 
 <img src="Week 7 UTS/image/2.png" alt="">
 
-
-Deskripsi :
-
-
 Visualisasi :
 
 ```
@@ -190,7 +188,7 @@ int main() {
   return 0;
 }
 ```
-
+Analisa: Output di atas menunjukkan bahwa aplikasi ini memanfaatkan sistem pemanggilan fork untuk menciptakan cabang-cabang proses. Tiap anak proses memiliki variabel "x" masing-masing yang independen dari yang lainnya.
 
 3. fork03
 
@@ -220,10 +218,6 @@ int main(void) {
 
 <img src="Week 7 UTS/image/3.png" alt="">
 
-Deskripsi :
-
-
-
 Visualisasi :
 
 ```
@@ -244,6 +238,9 @@ int main() {
   return 0;
 }
 ```
+
+Analisa: Program di atas melakukan pengulangan proses forking, menghasilkan proses-proses baru dengan pesan yang mencatat ID unik dari setiap proses (PID). Kehadiran beberapa PID yang serupa menunjukkan bahwa proses induk melakukan forking beberapa kali, menciptakan proses-proses anak dengan PID yang sama.
+
 
 4. fork04
 
@@ -299,9 +296,6 @@ int main(void) {
 
 <img src="Week 7 UTS/image/4.png" alt="">
 
-Deskripsi : 
-
-
 Visualisasi : 
 
 ```
@@ -326,6 +320,11 @@ int main() {
   return 0;
 }
 ```
+
+Analisa: Program tersebut melakukan proses fork untuk menciptakan proses anak. Proses induk mencetak pesan yang menunjukkan identitasnya, yaitu "I am the parent and my pid = 7134", di mana 7134 adalah PID dari proses induk itu sendiri. Sementara proses anak mencetak pesan "My parent is 7134" diikuti dengan PID-nya sendiri, yaitu "I am a child and my pid = 7135". Keduanya kemudian mencetak pesan yang serupa. Proses anak kemudian memberikan pesan penutup "I am a child and I am quitting work now!" untuk menandakan berhentinya prosesnya. Proses induk menyusul dengan mencetak pesan "I am the parent and I am quitting".
+
+
+
 5. fork05
 
 ```
@@ -384,9 +383,6 @@ int main(void) {
 
 <img src="Week 7 UTS/image/5.png" alt="">
 
-Deskripsi : 
-
-
 Visualisasi : 
 
 
@@ -414,6 +410,9 @@ int main() {
   return 0;
 }
 ```
+
+Analisa: Program di bawah ini adalah sebuah contoh implementasi `fork()` dengan dua proses yang saling terhubung. Proses pertama memiliki ID proses (PID) 7167 dan ID proses induk (PPID) yang tidak diketahui pada awalnya, yang merujuk kepada proses utama (biasanya program utama atau induk). Ketika program dijalankan dan fungsi fork() dipanggil, akan tercipta proses baru dengan PID 7167 dan PPID 7168. Setelah itu, program induk akan mencetak output yang menampilkan nomor PID dan PID anak. Kemudian, program induk akan menunggu hingga proses anak selesai dieksekusi. Saat proses anak selesai dan mencetak output yang menampilkan nomor PID dan PID induknya, program induk akan segera keluar dari proses. Setelah proses anak selesai dieksekusi dan keluar dari proses, barulah program induk juga akan keluar dari prosesnya.
+
 
 6. Fork06
 
@@ -476,9 +475,6 @@ int main(void) {
 
 <img src="Week 7 UTS/image/6.png" alt="">
 
-Deskripsi : 
-
-
 Visualisasi : 
 
 
@@ -506,6 +502,9 @@ int main() {
   return 0;
 }
 ```
+
+Analisa: Proses induk mencetak pesan yang menyatakan identitasnya sebagai "I am the parent and my pid = 7242", di mana 7242 adalah PID dari proses induk itu sendiri. Sementara itu, proses anak mencetak pesan "My parent is 7242" diikuti dengan PID-nya sendiri, yaitu "I am a child and my pid = 7243". Keduanya juga mencetak pesan yang menunjukkan bahwa mereka adalah proses yang sehat dan bahagia dengan PID masing-masing. Kemudian, kedua proses terus mencetak pesan "This is process XXXX", di mana XXXX menunjukkan PID masing-masing proses, menunjukkan iterasi dalam siklus kerjanya. Akhirnya, proses induk mengakhiri eksekusinya dengan mencetak pesan "I am the parent and I am quitting.".
+
 
 ### Jawaban nomor 2
 
@@ -574,4 +573,8 @@ Output :
 
 <img src="Week 7 UTS/image/7.png" alt="">
 
-Analisis: 
+Analisa: Kode di atas merupakan sebuah program perkalian 2 matriks [4 x 4] dalam bahasa C yang menggunakan fork() untuk melakukan proses multiproses.
+
+Fork Process: Setelah menginisialisasi matriks, program melakukan fork untuk menciptakan proses anak. Proses anak akan mengalikan setiap elemen matriks dengan skalar, sedangkan proses induk akan menunggu proses anak selesai.
+
+Serial Processing: Meskipun perkalian skalar dilakukan secara paralel oleh proses anak, program menunggu proses anak selesai sebelum melanjutkan eksekusi. Ini dilakukan dengan menggunakan fungsi wait(), sehingga proses induk akan menunggu sampai proses anak selesai sebelum mencetak pesan bahwa proses induk telah selesai.
