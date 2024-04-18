@@ -66,7 +66,7 @@ int main() {
 ```
 
 
-<img src="Week 7 UTS/image/3.png" alt="">
+<img src="Week 7 UTS/image/8.png" alt="">
 
 Analisa : Program ini mencetak informasi tentang PID (Process ID), Child ID, dan PPID (Parent Process ID) saat proses utama dipanggil dengan PID 2488 dan parent ID 2246. Saat proses utama menggunakan fungsi fork(), informasi tersebut dicetak dengan penjelasan yang menunjukkan proses induk dan anak, masing-masing memiliki PID dan PPID. Proses induk memiliki PID 2488 dan PPID 2246, sama dengan proses utama. Proses anak memiliki PID 2489 dan PPID 1130, dengan PID yang jelas lebih besar daripada proses induk.
 
