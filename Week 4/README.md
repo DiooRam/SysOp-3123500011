@@ -358,7 +358,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
    $ cat out
    ```
 
-   <img src="Image/17.jpg">
+   <img src="Image/16.jpg">
  
 ## Percobaan 4 : Filter
 1. Pipa juga digunakan untuk mengkombinasikan utilitas sistem untuk membentuk fungsi yang lebih kompleks
@@ -384,7 +384,7 @@ Proses 1 menghasilkan output yang selanjutnya digunakan sebagai input oleh Prose
     $ cat kelas1.txt kelas2.txt > kelas.txt
     $ cat kelas.txt | sort | uniq
    ```
-
+   <img src="Image/17.jpg">
    <img src="Image/18.jpg">
    <img src="Image/19.jpg">
    <img src="Image/20.jpg">
@@ -404,8 +404,8 @@ Perintah `$ cat kelas.txt | sort | uniq` bertujuan untuk menggabungkan isi dari 
 
 1. Lihat daftar secara lengkap pada direktori aktif, belokkan tampilan standard output ke file baru.
 
-   <img src="Image/tstttt.png">
-   <img src="Image/22.jpg">
+   <img src="Image/tstttt.jpg">
+   <img src="Image/22 .jpg">
 
    <br>
    Analisis:
