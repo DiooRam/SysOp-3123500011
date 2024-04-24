@@ -88,7 +88,9 @@ Program FLOPS (Floating Point Operations Per Second) dan IOPS (Input/Output Oper
 - *Evaluasi Performa Penyimpanan*: Hasil dari program IOPS 64 dapat menunjukkan seberapa baik SSD, HDD, atau sistem penyimpanan lainnya dalam menangani operasi I/O.
 - *Penggunaan Sistem yang Efisien*: Jika Anda berencana membangun sistem yang membutuhkan performa I/O tinggi, hasil dari program ini dapat membantu dalam memilih komponen yang sesuai.
 
-
+### Flowchart
+ <img src= "image/flowchart.png" >
+ 
 ### Kesimpulan
 - *Validasi dan Pemilihan Perangkat Keras*: Kedua program ini membantu dalam memvalidasi dan memilih perangkat keras yang tepat untuk kebutuhan komputasi atau I/O.
 - *Pemecahan Masalah*: Jika Anda menemukan performa sistem Anda kurang optimal, hasil FLOPS 64 dan IOPS 64 dapat memberikan wawasan tentang area mana yang mungkin perlu ditingkatkan.
