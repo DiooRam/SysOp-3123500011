@@ -76,7 +76,25 @@ Percobaan yang kami lakukan meliputi : Penggunaan program benchmark untuk menget
 
 Kinerja sistem dalam melakukan operasi floating point 64-bit diatas dikarenakan penggunaan laptop yang digunakan setiap anggota memiliki perbedaan processor, membuat hasil percobaan menunjukkan variasi yang signifikan, dengan throughput CPU maksimum berkisar antara 9.98 hingga 23.22 Gigaflops. Sementara itu, operasi integer 64-bit menunjukkan fluktuasi yang lebih terkendali, dengan throughput CPU maksimum berkisar antara 12.72 hingga 13.22 Gigaiops.
 
+Program FLOPS (Floating Point Operations Per Second) dan IOPS (Input/Output Operations Per Second) adalah dua ukuran penting dalam dunia komputasi untuk mengukur performa perangkat keras. Berikut adalah beberapa kesimpulan yang dapat diambil setelah menjalankan program FLOPS 64 dan IOPS 64:
+
+### FLOPS 64
+- *Indikasi Performa Floating Point*: FLOPS 64 mengukur performa operasi floating point 64-bit, yang penting untuk aplikasi ilmiah, analisis data, dan aplikasi yang membutuhkan perhitungan akurat.
+- *Evaluasi CPU/GPU*: Hasil dari program ini dapat memberikan gambaran tentang seberapa baik CPU atau GPU tertentu dalam menangani perhitungan berat yang melibatkan operasi floating point.
+- *Perbandingan Performa*: FLOPS 64 memungkinkan perbandingan antara perangkat keras yang berbeda. Dengan hasil ini, Anda dapat mengetahui apakah suatu CPU atau GPU lebih unggul dalam aspek perhitungan tertentu dibandingkan dengan yang lain.
+
+### IOPS 64
+- *Indikasi Performa I/O*: IOPS 64 mengukur kemampuan perangkat keras dalam menangani operasi input/output 64-bit. Ini penting dalam konteks basis data, sistem penyimpanan, dan aplikasi yang mengandalkan banyak operasi I/O.
+- *Evaluasi Performa Penyimpanan*: Hasil dari program IOPS 64 dapat menunjukkan seberapa baik SSD, HDD, atau sistem penyimpanan lainnya dalam menangani operasi I/O.
+- *Penggunaan Sistem yang Efisien*: Jika Anda berencana membangun sistem yang membutuhkan performa I/O tinggi, hasil dari program ini dapat membantu dalam memilih komponen yang sesuai.
+
+
 ### Kesimpulan
+- *Validasi dan Pemilihan Perangkat Keras*: Kedua program ini membantu dalam memvalidasi dan memilih perangkat keras yang tepat untuk kebutuhan komputasi atau I/O.
+- *Pemecahan Masalah*: Jika Anda menemukan performa sistem Anda kurang optimal, hasil FLOPS 64 dan IOPS 64 dapat memberikan wawasan tentang area mana yang mungkin perlu ditingkatkan.
+- *Pemantauan Performa*: Menggunakan program ini secara berkala dapat membantu memantau perubahan performa sistem dari waktu ke waktu, memungkinkan Anda untuk mengidentifikasi dan memperbaiki masalah sejak dini.
+
+Secara keseluruhan, kesimpulan yang dapat diambil adalah bahwa program FLOPS 64 dan IOPS 64 memberikan informasi penting tentang performa perangkat keras dalam hal perhitungan floating point dan operasi I/O, yang dapat membantu dalam evaluasi, pemilihan, dan pemantauan sistem komputasi Anda.
 
 Kesimpulan dari percobaan tersebut adalah bahwa percobaan IOPS berkaitan dengan kinerja perangkat penyimpanan dalam melakukan operasi input/output, sementara percobaan FLOPS berkaitan dengan kinerja prosesor dalam melakukan operasi perhitungan floating point. Dalam percobaan yang dilakukan, hasil menunjukkan bahwa IOPS memiliki total throughput dan throughput single core yang lebih tinggi daripada FLOPS. Perbedaan dalam kinerja sistem terkait dengan operasi floating point 64-bit disebabkan oleh perbedaan processor pada laptop yang digunakan oleh setiap anggota. Hal ini menyebabkan hasil percobaan menunjukkan perbedaan hasil dalam throughput CPU maksimum, baik untuk operasi floating point maupun integer.
 
