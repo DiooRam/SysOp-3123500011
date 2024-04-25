@@ -414,3 +414,18 @@ Utilitas untuk melakukan pengontrolan proses dapat ditemukan pada sistem UNIX ad
      <img src="image/43.png" alt="">
 
   Analisa : Yang terjadi ialah proses sleep tidak lagi dalam keadaan Running. Hal ini bisa terjadi karena kita keluar dari terminal dan itu otomatis membuat semua proses yang dijalankan oleh user yang log off ikut berhenti.
+
+
+
+
+#### Perbedaan Interupt dan Systemcall
+
+1. System Call
+Panggilan sistem adalah metode yang memungkinkan proses pengguna berinteraksi dengan kernel sistem operasi. Panggilan sistem adalah panggilan dari mode pengguna ke mode kernel. Dengan kata lain, ini adalah cara program yang berjalan di komputer meminta layanan dari kernel.
+Kita dapat menggunakan panggilan sistem untuk membaca informasi dari file, mendapatkan waktu, mengelola memori komputer, atau mengontrol aliran data antar komputer. Selanjutnya, program pengguna memulai panggilan sistem dengan menjalankan instruksi yang mentransfer kendali dari program pengguna ke kernel sistem operasi. Panggilan sistem adalah permintaan program ke kernel untuk mengeksekusi suatu operasi:
+
+
+2. Interupt
+Interupsi sistem adalah cara suatu proses memperingatkan kernel bahwa suatu peristiwa telah terjadi. Setelah diinterupsi, kernel dapat memproses kejadian tersebut dan kembali ke proses yang ditinggalkannya. Interupsi sistem juga digunakan untuk menghentikan sementara eksekusi suatu program.
+Interupsi sistem terjadi ketika sistem operasi mungkin ingin menghentikan program melakukan tugas di kernel. Interupsi adalah cara umum sinyal perangkat keras dan perangkat lunak memperingatkan komputer akan peristiwa seperti penyelesaian instruksi dan kedatangan data dari jaringan:
+
