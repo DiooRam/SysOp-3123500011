@@ -70,4 +70,7 @@
 
 4. Keamanan UEFI dapat mencegah pemuatan aplikasi yang tak sah atau dicurigai. Selain itu juga dapat menghambat adanya kerja dua boot karena UEFI menganggap sistem operasi adalah aplikasi. ADVERTISEMENT Namun, pada Legacy, tak ada keamanan yang disediakan saat booting berlangsung, sehingga ada kemungkinan aplikasi tak sah dimuat serta terjadi dual-boot.
 
+### Flowchart
+ <img src= "image/flowchart.png" >
+
 
