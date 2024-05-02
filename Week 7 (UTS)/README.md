@@ -573,10 +573,6 @@ Output :
 
 Analisa: Kode di atas merupakan sebuah program perkalian 2 matriks [4 x 4] dalam bahasa C yang menggunakan fork() untuk melakukan proses multiproses.
 
-fork() membuat salinan proses saat ini. Proses anak memiliki PID (Process ID) yang berbeda dari proses induk. Proses anak memperoleh salinan dari semua variabel yang dimiliki oleh proses induk, termasuk kode program. Namun, kedua proses memiliki aliran eksekusi yang berbeda, yang berarti mereka dapat menjalankan perintah-perintah yang berbeda secara independen.
+Fork Process: Setelah menginisialisasi matriks, program melakukan fork untuk menciptakan proses anak. Proses anak akan mengalikan setiap elemen matriks dengan skalar, sedangkan proses induk akan menunggu proses anak selesai.
 
-Dalam program ini, setelah pemanggilan fork(), kedua proses (anak dan induk) memiliki aliran eksekusi yang berbeda. Proses anak akan mengalami if (pid == 0) karena nilai pid yang dikembalikan oleh fork() ke proses anak adalah 0. Sebaliknya, proses induk akan masuk ke else if (pid > 0) karena nilai pid yang dikembalikan adalah PID dari proses anak.
-
-Setelah melakukan perkalian matriks, proses anak mencetak hasilnya. Kemudian, proses induk menunggu proses anak selesai dengan menggunakan wait(). Setelah itu, proses induk juga melakukan perkalian matriks dan mencetak hasilnya.
-
-Dengan demikian, fork() memungkinkan program untuk melakukan operasi secara paralel, di mana kedua proses dapat menjalankan tugas mereka secara bersamaan, meningkatkan efisiensi program dalam situasi tertentu.
+Serial Processing: Meskipun perkalian skalar dilakukan secara paralel oleh proses anak, program menunggu proses anak selesai sebelum melanjutkan eksekusi. Ini dilakukan dengan menggunakan fungsi wait(), sehingga proses induk akan menunggu sampai proses anak selesai sebelum mencetak pesan bahwa proses induk telah selesai.
